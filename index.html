@@ -77,10 +77,149 @@ table.cmp td.bad{color:var(--n);font-weight:700}table.cmp td.good{color:var(--ok
 .vrow{display:grid;grid-template-columns:240px 1fr;gap:14px;align-items:start}@media(max-width:700px){.vrow{grid-template-columns:1fr}}
 .vrow video{width:100%;max-width:240px;border-radius:6px;background:#000;aspect-ratio:9/16}
 .chk li{margin:6px 0}
+.tabbar{display:flex;gap:6px;max-width:1160px;margin:0 auto;padding:10px 16px 0}
+.tabbar button{font:inherit;font-size:15px;font-weight:700;padding:8px 18px;border:1px solid var(--line);border-bottom:none;border-radius:10px 10px 0 0;background:var(--bg);color:var(--ink2);cursor:pointer}
+.tabbar button[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tabbar .tb-note{margin-left:auto;align-self:center;font-size:12px;color:var(--muted)}
+.x-hero .lead{font-size:19px;line-height:1.6;margin:10px 0 0}
+.x-sec{margin-top:40px}.x-sec>h2{margin-top:0}
+.x-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:820px){.x-two{grid-template-columns:1fr}}
+.x-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.x-card h3{margin:0 0 4px;font-size:17px}
+.x-cmp{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.x-cmp th{font-size:12px;color:var(--muted);font-weight:400;text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+.x-cmp td{padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+.x-cmp td.v{text-align:right;white-space:nowrap}.x-cmp td.v b{font-size:15px}
+.x-bar{position:relative;height:14px;background:var(--bg);border-radius:4px;min-width:90px}
+.x-bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px}
+.x-bar .ref{position:absolute;top:-3px;bottom:-3px;width:0;border-left:2px dashed var(--ink2)}
+.x-bar.good i{background:var(--ok)}.x-bar.bad i{background:var(--n)}.x-bar.flat i{background:var(--s0)}
+.x-tag{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:1px 8px;white-space:nowrap}
+.x-tag.good{background:var(--okbg);color:var(--ok)}.x-tag.bad{background:var(--nbg);color:var(--n)}.x-tag.flat{background:var(--bg);color:var(--ink2)}
+.x-say{font-size:15px;margin:10px 0 0;font-weight:700}
+.x-win{display:grid;grid-template-columns:200px 1fr;gap:14px;align-items:start}
+@media(max-width:620px){.x-win{grid-template-columns:1fr}}
+.x-win video{width:100%;aspect-ratio:9/16;border-radius:8px;background:#000}
+.x-num{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0}.x-num div{font-size:12px;color:var(--muted)}.x-num b{display:block;font-size:22px;color:var(--ink);line-height:1.2}
+.x-fr{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.x-fr figure{margin:0}.x-fr img{width:100%;border-radius:6px;display:block}.x-fr figcaption{font-size:11px;color:var(--muted);line-height:1.4;margin-top:2px}
+.x-lose{display:flex;gap:10px;align-items:center;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:14px}
+.x-lose img{width:56px;border-radius:6px;flex:none}
+.x-can li{margin:6px 0}.x-can{padding-left:18px;margin:6px 0}
+.x-iss{display:grid;gap:10px}
+.x-iss .x-card{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:start;padding:14px 16px}
+@media(max-width:620px){.x-iss .x-card{grid-template-columns:30px 1fr}.x-iss .who{grid-column:2}}
+.x-iss .n{background:var(--accent);color:#fff;border-radius:8px;text-align:center;font-weight:800;line-height:30px;height:30px}
+.x-iss h4{margin:0 0 2px;font-size:16px}.x-iss p{margin:0;font-size:14px;color:var(--ink2)}
+.x-iss .who{font-size:12px;color:var(--accent);font-weight:700;white-space:nowrap;padding-top:4px}
+.x-src{font-size:12px;color:var(--muted);margin-top:8px}
+#tab-full h2{scroll-margin-top:52px}
+.x-cmp th{background:none!important;color:var(--muted)!important}
+.x-more{display:inline-block;margin-top:8px;font-size:13px;color:var(--accent);cursor:pointer;text-decoration:underline}
+
 .tl{display:flex;gap:2px;margin:8px 0 2px;border-radius:5px;overflow:hidden}.tl div{height:10px;min-width:2px}.tl .st{background:var(--s1)}.tl .gm{background:var(--s2)}.tl .ed{background:var(--s0)}.seq{font-size:13px;color:var(--ink2);margin:2px 0 4px}.seq b{font-weight:700}.seq .k-st{color:var(--s1)}.seq .k-gm{color:var(--s2)}.seq .k-ed{color:var(--muted)}.tlg{font-size:11px;color:var(--muted);margin:0 0 4px}.tlg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 3px 0 8px;vertical-align:-1px}.sc h4{margin:0 0 4px;font-size:15px}.sc p{margin:2px 0;font-size:14px}.sc .res{color:var(--ink2)}.sc a.play{font-size:12px;margin-left:6px}
 .cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0}.cases figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px}.cases video{width:100%;aspect-ratio:9/16;border-radius:6px;background:#000}.cases figcaption{font-size:13px;line-height:1.5;margin-top:4px}.cases figcaption b{display:block;font-size:14px}.cases .num{color:var(--ink2);font-variant-numeric:tabular-nums}
 .fx text{font-family:inherit}.fx .ax{fill:var(--muted);font-size:12px}.fx .lb{fill:var(--ink);font-size:14px;font-weight:700}.fx .vl{fill:var(--ink);font-size:16px;font-weight:800}.fx .gl{stroke:var(--line)}
-</style><script data-goatcounter="https://slipknot19880824.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body><main>
+</style><script data-goatcounter="https://slipknot19880824.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body><nav class="tabbar" role="tablist"><button role="tab" data-tab="exec" aria-selected="true">高階摘要</button><button role="tab" data-tab="full" aria-selected="false">完整版</button><span class="tb-note">完整版＝原報告全部內容</span></nav><main id="tab-exec">
+<section class="hero x-hero">
+<p style="font-size:13px;opacity:.8">短劇素材突破計畫｜高階摘要｜2026-11-12｜營銷美術</p>
+<h1>短劇買得到曝光，但帶進來的人少付費；<br>跑得動的，都是博弈元素濃的那幾支。</h1>
+<p class="lead">DARA（美國）和金猴爺（日本）各投了第一輪小量短劇。下一輪要分清楚三件事：遊戲前的劇情要多短、博弈元素要多濃、羞辱翻轉以外的劇情能不能跑。</p>
+<div class="kpis">
+<div class="kpi"><b>1/3</b><span>DARA 短劇的千次曝光成本只有大盤的三分之一（$24.4 對 $73.8）</span></div>
+<div class="kpi"><b>7%</b><span>DARA 短劇點擊後安裝只有大盤的 7%（0.6% 對 9.1%）</span></div>
+<div class="kpi"><b>88%</b><span>DARA 11/2 週 10 支短劇的儲值，88% 來自同一支（VD58_03，花 $310 帶回 $1,935）</span></div>
+<div class="kpi"><b>83 安裝</b><span>金猴爺 10 月短劇裡安裝最多的一支，劇情整支發生在柏青店（VD33）</span></div>
+</div>
+</section>
+
+<section class="x-sec">
+<h2><span class="no">1</span>為什麼要試短劇</h2>
+<p class="sub">各市場的預算都集中在付費型和回流，拉新越來越難；台灣、馬來還有 Meta 投放限制。短劇是目前曝光量最大的內容之一。</p>
+<div class="kpis" style="margin-top:0">
+<div class="x-card"><div class="x-num"><div><b>75.6%</b>短劇用戶同時玩網路遊戲</div></div></div>
+<div class="x-card"><div class="x-num"><div><b>2.2~2.7 倍</b>韓國、印尼、印度短劇用戶的「博彩用戶」標籤比一般人高</div></div></div>
+<div class="x-card"><div class="x-num"><div><b>50% 以上</b>AI 短劇可省下的製作成本</div></div></div>
+</div>
+<div class="x-two" style="margin-top:14px">
+<div class="x-card"><h3>同業已經在用：同一個劇本，真人版和 AI 翻拍版</h3>
+<p style="font-size:14px;margin:0 0 8px">美國博弈廣告（2026-04）。AI 版把場景改成雪地、抱小孩翻垃圾桶，遊戲錄屏直接貼進手機畫面。代表同一個劇本可以用 AI 低成本重做、量產變體。</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+<figure style="margin:0"><video controls preload="none" src="assets/博弈_美國_6dcf16d7.mp4" style="width:100%;border-radius:8px;background:#000"></video><figcaption style="font-size:12px;color:var(--muted)">真人版</figcaption></figure>
+<figure style="margin:0"><video controls preload="none" src="assets/博弈_美國_f8c00f1a.mp4" style="width:100%;border-radius:8px;background:#000"></video><figcaption style="font-size:12px;color:var(--muted)">AI 翻拍版</figcaption></figure>
+</div></div>
+<div class="x-card"><h3>短劇的固定骨架</h3>
+<p style="font-size:15px;margin:0 0 8px"><b>開場就吵架或出怪事 → 主角被看扁 → 每 4~6 秒一個衝突 → 停在快要打臉的地方</b></p>
+<p style="font-size:14px;margin:0;color:var(--ink2)">各國包裝不同（台灣復仇逆襲、日本懸疑重生、美國億萬富翁），骨架一樣。博弈廣告的套法是：被羞辱 → 拿起遊戲 → 中獎翻身。這次兩個產品測的都是這一型。</p>
+<span class="x-more" data-go="s3">看完整版第三章：各國套路與 194 支遊戲廣告拆解 →</span>
+</div>
+</div>
+</section>
+
+<section class="x-sec">
+<h2><span class="no">2</span>第一輪測試結果：短劇和自己的大盤比</h2>
+<p class="sub">大盤＝同一個產品、同一段期間所有素材的平均。兩個產品的市場、媒體、期間都不同，只能各自跟自己的大盤比。</p>
+<div class="x-two">
+<div class="x-card"><h3>DARA（美國，FB iOS，近 13 週）</h3><table class="x-cmp"><tr><th>指標</th><th style="text-align:right">短劇</th><th style="text-align:right">大盤</th><th>倍數（虛線＝和大盤一樣）</th><th>比大盤</th></tr><tr><td>CPM 千次曝光成本</td><td class="v"><b>$24.4</b></td><td class="v">$73.8</td><td style="width:34%"><div class="x-bar good" title="短劇是大盤的 ×0.33"><i style="width:6.6%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag good">便宜 67%</span></td></tr><tr><td>點擊率</td><td class="v"><b>10.0%</b></td><td class="v">2.1%</td><td style="width:34%"><div class="x-bar good" title="短劇是大盤的 ×4.76"><i style="width:95.2%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag good">高 4.8 倍</span></td></tr><tr><td>點擊後安裝</td><td class="v"><b>0.6%</b></td><td class="v">9.1%</td><td style="width:34%"><div class="x-bar bad" title="短劇是大盤的 ×0.07"><i style="width:1.3%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag bad">只有 7%</span></td></tr><tr><td>CPI 每安裝成本</td><td class="v"><b>$40.6</b></td><td class="v">$39.2</td><td style="width:34%"><div class="x-bar flat" title="短劇是大盤的 ×1.04"><i style="width:20.7%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag flat">差不多</span></td></tr><tr><td>ROI</td><td class="v"><b>10%</b></td><td class="v">48%</td><td style="width:34%"><div class="x-bar bad" title="短劇是大盤的 ×0.21"><i style="width:4.2%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag bad">只有 21%</span></td></tr></table>
+<p class="x-say">曝光很便宜、也有人點，但點了不裝、裝了少付費。</p>
+<div class="x-src">每個安裝帶回的儲值：短劇 $4.2，大盤 $18.7。短劇花費 $2,477。來源：DARA 素材策略提案 v3（11-03）。</div></div>
+<div class="x-card"><h3>金猴爺（日本，10 月新進）</h3><table class="x-cmp"><tr><th>指標</th><th style="text-align:right">短劇</th><th style="text-align:right">大盤</th><th>倍數（虛線＝和大盤一樣）</th><th>比大盤</th></tr><tr><td>CPM 千次曝光成本</td><td class="v"><b>$3.08</b></td><td class="v">$3.25</td><td style="width:34%"><div class="x-bar flat" title="短劇是大盤的 ×0.95"><i style="width:19.0%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag flat">差不多</span></td></tr><tr><td>點擊率</td><td class="v"><b>2.57%</b></td><td class="v">3.96%</td><td style="width:34%"><div class="x-bar bad" title="短劇是大盤的 ×0.65"><i style="width:13.0%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag bad">低 35%</span></td></tr><tr><td>點擊後安裝</td><td class="v"><b>1.30%</b></td><td class="v">1.50%</td><td style="width:34%"><div class="x-bar bad" title="短劇是大盤的 ×0.87"><i style="width:17.3%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag bad">低 13%</span></td></tr><tr><td>CPI 每安裝成本</td><td class="v"><b>$9.32</b></td><td class="v">$5.41</td><td style="width:34%"><div class="x-bar bad" title="短劇是大盤的 ×1.72"><i style="width:34.5%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag bad">貴 72%</span></td></tr><tr><td>ROI</td><td class="v"><b>1.7%</b></td><td class="v">30.1%</td><td style="width:34%"><div class="x-bar bad" title="短劇是大盤的 ×0.06"><i style="width:1.1%"></i><span class="ref" style="left:20%"></span></div></td><td><span class="x-tag bad">只有 6%</span></td></tr></table>
+<p class="x-say">曝光沒有比較便宜，點擊和安裝都比大盤差。</p>
+<div class="x-src">CPM 由 CPI × 每千次曝光安裝數推算。短劇 124 安裝。來源：同事 10 月月報。</div></div>
+</div>
+
+<h3 style="margin:22px 0 8px">跑得動的兩支：博弈元素都很濃</h3>
+<div class="x-two">
+<div class="x-card"><div class="x-win">
+<video controls preload="none" poster="assets/test/dara_vd58_03.jpg" src="assets/test/dara_vd58_03.mp4" playsinline></video>
+<div><h3>DARA｜VD58_03 飯店被插隊</h3>
+<p style="font-size:14px;margin:0">女生被櫃台嘲笑訂不起套房 → 現金包下總統套房 → 揭曉錢是玩 DARA 贏的、5 分鐘出金</p>
+<div class="x-num"><div><b>$310</b>花費</div><div><b>9</b>安裝</div><div><b>3</b>人付費</div><div><b>$1,935</b>儲值</div></div>
+<div class="tl"><div class="st" style="flex:10" title="0-9s 被插隊"></div><div class="st" style="flex:5" title="10-14s 被嘲笑訂不起"></div><div class="st" style="flex:5" title="15-19s 現金包總統套房"></div><div class="st" style="flex:3" title="20-22s 櫃台被開除"></div><div class="gm" style="flex:7" title="23-29s 揭曉錢來自 DARA"></div><div class="gm" style="flex:19" title="30-48s 遊戲實機"></div><div class="ed" style="flex:4" title="49-52s 片尾卡"></div></div><p class="seq"><span class="k-st">0-9s <b>被插隊</b></span> → <span class="k-st">10-14s <b>被嘲笑訂不起</b></span> → <span class="k-st">15-19s <b>現金包總統套房</b></span> → <span class="k-st">20-22s <b>櫃台被開除</b></span> → <span class="k-gm">23-29s <b>揭曉錢來自 DARA</b></span> → <span class="k-gm">30-48s <b>遊戲實機</b></span> → <span class="k-ed">49-52s <b>片尾卡</b></span></p></div></div>
+<div class="x-fr"><figure><img loading="lazy" src="assets/test/dara_vd58_03_12s.jpg" alt="12 秒"><figcaption>12s 被嘲笑只訂得起標準房</figcaption></figure><figure><img loading="lazy" src="assets/test/dara_vd58_03_17s.jpg" alt="17 秒"><figcaption>17s 現金疊在櫃台</figcaption></figure><figure><img loading="lazy" src="assets/test/dara_vd58_03_25s.jpg" alt="25 秒"><figcaption>25s 套房裡秀手機遊戲</figcaption></figure><figure><img loading="lazy" src="assets/test/dara_vd58_03_26s.jpg" alt="26 秒"><figcaption>26s SUPER WIN $50,000＋PayPal</figcaption></figure></div>
+<div class="x-lose"><img src="assets/test/dara_vd58_02_8s.jpg" alt=""><div><b>對照：</b>同一個模板的 VD58_02（廚具展間）只花了 $17、0 安裝。結構一樣、量差很大，量的差異比較可能來自平台分配預算，不是劇本。</div></div>
+</div>
+<div class="x-card"><div class="x-win">
+<video controls preload="none" poster="assets/test/202610_VD33_1s.jpg" src="assets/test/hy_vd33.mp4" playsinline></video>
+<div><h3>金猴爺｜VD33 柏青店老人</h3>
+<p style="font-size:14px;margin:0">老人在柏青店被小混混嘲笑輸光年金 → 改玩手機爆金幣 → 店員推來整車鋼珠箱</p>
+<div class="x-num"><div><b>$887</b>花費</div><div><b>83</b>安裝</div><div><b>$7.8~13.3</b>CPI（3 個廣告組）</div></div>
+<div class="tl"><div class="st" style="flex:5" title="0-4s 小混混嘲笑老人"></div><div class="st" style="flex:4" title="5-8s 年金要輸光"></div><div class="gm" style="flex:3" title="9-11s 改拿手機"></div><div class="gm" style="flex:5" title="12-16s 爆金幣"></div><div class="gm" style="flex:5" title="17-21s 店員推鋼珠箱"></div><div class="st" style="flex:5" title="22-26s 你以為我是誰"></div><div class="ed" style="flex:6" title="27-32s 片尾卡"></div></div><p class="seq"><span class="k-st">0-4s <b>小混混嘲笑老人</b></span> → <span class="k-st">5-8s <b>年金要輸光</b></span> → <span class="k-gm">9-11s <b>改拿手機</b></span> → <span class="k-gm">12-16s <b>爆金幣</b></span> → <span class="k-gm">17-21s <b>店員推鋼珠箱</b></span> → <span class="k-st">22-26s <b>你以為我是誰</b></span> → <span class="k-ed">27-32s <b>片尾卡</b></span></p></div></div>
+<div class="x-fr"><figure><img loading="lazy" src="assets/test/202610_VD33_1s.jpg" alt="1 秒"><figcaption>1s 柏青店老人打珠</figcaption></figure><figure><img loading="lazy" src="assets/test/202610_VD33_15s.jpg" alt="15 秒"><figcaption>15s 拿手機中獎</figcaption></figure><figure><img loading="lazy" src="assets/test/202610_VD33_17s.jpg" alt="17 秒"><figcaption>17s 店員推鋼珠箱</figcaption></figure><figure><img loading="lazy" src="assets/test/202610_VD33_27s.jpg" alt="27 秒"><figcaption>27s 片尾卡 100 萬幣</figcaption></figure></div>
+<div class="x-lose"><img src="assets/test/202609_VD46_0s.jpg" alt=""><div><b>對照：</b>VD46 偵探查外遇，66 秒、主線是外遇，遊戲只在中段出現 6 秒，幾乎沒有花費。</div></div>
+</div>
+</div>
+<p class="tlg" style="margin-top:8px">劇情結構色條：<i style="background:var(--s1)"></i>劇情<i style="background:var(--s2)"></i>遊戲／中獎／到帳<i style="background:var(--s0)"></i>片尾</p>
+
+<div class="x-two" style="margin-top:14px">
+<div class="x-card" style="border-top:4px solid var(--ok)"><h3>目前可以說</h3><ul class="x-can">
+<li>DARA 用短劇確實買到便宜曝光（千次曝光成本是大盤的 1/3）。</li>
+<li>兩個產品跑得動的，都是劇情繞著贏錢、博弈元素濃的那支。</li>
+<li>卡關在安裝之後：點進來的人不裝、裝了少付費。</li>
+</ul></div>
+<div class="x-card" style="border-top:4px solid var(--w)"><h3>還不能說</h3><ul class="x-can">
+<li>「過上好生活」題材比較好：DARA 這組儲值 $2,100，幾乎全靠 VD58_03 一支，只跑了一週。</li>
+<li>受眾偏女性：付費的那幾支都在髮廊、飯店套房、廚具展間這類女性消費場景，但還沒有受眾性別數據。</li>
+<li>短劇在日本也買得到便宜曝光：金猴爺這一輪沒有成立。</li>
+</ul></div>
+</div>
+<span class="x-more" data-go="s6">看完整版第六章：10 支影片的分鏡、劇情結構和逐支成效 →</span>
+</section>
+
+<section class="x-sec">
+<h2><span class="no">3</span>要一起討論的延伸議題</h2>
+<p class="sub">問題已經不是「要不要做短劇」，而是短劇裡放多少博弈元素、遊戲多早出現、帶進來的人怎麼留住。</p>
+<div class="x-iss">
+<div class="x-card"><span class="n">1</span><div><h4>下一輪測試怎麼設計，才分得出原因？</h4><p>同一個劇本做長短兩版、博弈濃淡兩版，再加一種羞辱翻轉以外的劇情。這一輪 10 支幾乎都是羞辱翻轉、長度和博弈濃度也混在一起，看不出是哪個在起作用。</p></div><span class="who">美術＋行銷</span></div>
+<div class="x-card"><span class="n">2</span><div><h4>安裝後付費差，遊戲端要不要接？</h4><p>短劇帶進來的人，進商店頁和遊戲第一眼，看不看得到廣告裡吸引他的那件事（出金、翻身、特定機台）？DARA 已規劃用這批劇本做商店頁。</p></div><span class="who">營運＋產品</span></div>
+<div class="x-card"><span class="n">3</span><div><h4>受眾要不要另外開？</h4><p>DARA 付費的都是女性消費場景。先到 Meta 後台看受眾性別，再決定要不要開女性受眾包單獨測。</p></div><span class="who">行銷</span></div>
+<div class="x-card"><span class="n">4</span><div><h4>台灣、馬來的 Meta 限制，短劇能不能當突破口？</h4><p>不放遊戲畫面、用劇情演玩法的素材，帳號風險誰評估？要不要改投 YouTube？</p></div><span class="who">行銷＋產品</span></div>
+<div class="x-card"><span class="n">5</span><div><h4>階段目標和停損點怎麼訂？</h4><p>第一階段看曝光與點擊，還是直接看安裝與付費？跑幾週、花多少錢沒有起色就停？</p></div><span class="who">四方共同</span></div>
+</div>
+<p class="x-src">兩邊樣本都還小（DARA 新一批只跑一週，金猴爺只有 4 支），以上是方向，不是定論。完整的市場數據、套路拆解、四方分工和測試細節在「完整版」頁籤。</p>
+</section>
+</main>
+<main id="tab-full" hidden>
 <section class="hero">
 <p style="font-size:13px;opacity:.8">短劇素材突破計畫｜2026-10-15 提案，2026-11-12 更新｜營銷美術</p>
 <h1>能否用 AI 短劇擴大受眾圈，<br>搶回被短劇佔走的曝光？</h1>
@@ -429,4 +568,13 @@ document.querySelectorAll('.infobtn').forEach(btn=>{btn.onclick=e=>{e.stopPropag
 function showList(title,items){const m=document.getElementById('gpmodal');m.querySelector('h4').textContent=title;m.querySelector('.gal').innerHTML=items.map(x=>`<figure><video controls preload="none" poster="${x.p}" src="${x.v}"></video><figcaption><b>${x.t}</b><br>${x.c}</figcaption></figure>`).join('');addPlay(m);m.style.display='flex';}
 function showGP(cat,idx,label){const items=(GPI[cat]||{})[idx]||[];const m=document.getElementById('gpmodal');m.querySelector('h4').textContent=cat+'類｜'+label+'（代表素材，每個產品 1 支）';m.querySelector('.gal').innerHTML=items.length?items.map(x=>`<figure><video controls preload="none" poster="${x.p}" src="${x.v}"></video><figcaption><b>${x.t}</b><br>${x.c}</figcaption></figure>`).join(''):'<p class="note">這一類沒有樣本</p>';addPlay(m);m.style.display='flex';}
 document.getElementById('gpmodal').onclick=e=>{if(e.target.id==='gpmodal'||e.target.classList.contains('x')){const m=document.getElementById('gpmodal');m.querySelectorAll('video').forEach(v=>v.pause());m.style.display='none';}};
+</script><script>
+(function(){const bs=document.querySelectorAll('.tabbar button');
+function show(t,hash){document.getElementById('tab-exec').hidden=t!=='exec';document.getElementById('tab-full').hidden=t!=='full';
+bs.forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===t));
+if(hash){const el=document.getElementById(hash);if(el){el.scrollIntoView();return;}}window.scrollTo(0,0);}
+bs.forEach(b=>b.onclick=()=>{show(b.dataset.tab);history.replaceState(null,'',b.dataset.tab==='full'?'#full':'#exec');});
+document.querySelectorAll('[data-go]').forEach(a=>a.onclick=()=>{show('full',a.dataset.go);history.replaceState(null,'','#'+a.dataset.go);});
+const h=location.hash.slice(1);if(h&&h!=='exec'){show('full',h==='full'?null:h);}
+})();
 </script></body></html>
